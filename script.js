@@ -8,7 +8,7 @@ $(function () {
         $("#mac").val(generateSerial2($("#model").val()));
         $("#generate").removeClass("btn-primary");
         $("#generate").addClass("active");
-        $("#generate").button("reset");
+        $(this).button("reset");
     });
 	
     $.getJSON("synology_new.json", function(json) {
