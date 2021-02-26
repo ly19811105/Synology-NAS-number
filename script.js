@@ -6,9 +6,8 @@ $(function () {
 //
 //	$("#generate").click(function () {
         $("#mac").val(generateSerial2($("#model").val()));
-        $("#generate").removeClass("btn-primary");
         $("#generate").addClass("active");
-        $(this).button("reset");
+        setTimeout(function () { $("#generate").removeClass("active") },500);
     });
 	
     $.getJSON("synology_new.json", function(json) {
