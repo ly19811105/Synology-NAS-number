@@ -1,4 +1,5 @@
 $(function () {
+    new ClipboardJS('.btn');
 
     $("#generate").click(function () {
         $("#sn").val(generateSerial($("#model").val()));
