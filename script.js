@@ -2,10 +2,11 @@ $(function () {
 
     $("#generate").click(function () {
         $("#sn").val(generateSerial($("#model").val()));
-    });
-
-	$("#generate").click(function () {
+//    });
+//
+//	$("#generate").click(function () {
         $("#mac").val(generateSerial2($("#model").val()));
+        $("#generate").addClass("active");
     });
 	
     $.getJSON("synology_new.json", function(json) {
