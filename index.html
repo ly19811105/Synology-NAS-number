@@ -12,7 +12,7 @@
     <script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <script src="script.js"></script>
     <script>
-      var clipboard = new ClipboardJS('.btn');
+      var clipboard = new ClipboardJS('.btn', { container: document.getElementById('modal') });
 
       clipboard.on('success', function (e) {
         console.log(e);
