@@ -13,7 +13,7 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <div class="container m-auto p-auto" style="text-align:center">
+    <div class="container mb-3" style="text-align:center">
       <h2>Synology NAS number</h2>
       <select class="form-control" onchange="selectOnchang(this)" name="model" id="model">
         <option value="LW">DS3615xs</option>
@@ -47,13 +47,13 @@
         <option value="QH">RX418</option>
         <option value="QG">RT2600ac</option>
       </select>
-      <div class="input-group mb-3">
+      <div class="input-group">
         <input name="input" class="form-control" id="sn" placeholder="Serial number" readonly="readonly">
         <div class="input-group-append">
            <button class="btn btn-default" data-clipboard-target="#sn">Copy</button> 
         </div>
       </div>
-      <div class="input-group mb-3">
+      <div class="input-group">
         <input name="input" class="form-control" id="mac" placeholder="MAC Address" readonly="readonly">
         <div class="input-group-append">
           <button class="btn btn-default" data-clipboard-target="#mac">Copy</button>
