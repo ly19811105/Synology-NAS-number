@@ -13,9 +13,9 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <div class="container mb-3" style="text-align:center">
+    <div class="container" style="text-align:center">
       <h2 style="color: #006699;">Synology NAS number</h2>
-      <select class="form-control" onchange="selectOnchang(this)" name="model" id="model">
+      <select class="form-control mb-3" onchange="selectOnchang(this)" name="model" id="model">
         <option value="LW">DS3615xs</option>
         <option value="OD">DS3617xs</option>
         <option value="NJ">DS716+</option>
@@ -47,19 +47,19 @@
         <option value="QH">RX418</option>
         <option value="QG">RT2600ac</option>
       </select>
-      <div class="input-group">
+      <div class="input-group mb-3">
         <input name="input" class="form-control" id="sn" placeholder="Serial number" readonly="readonly">
         <span class="input-group-btn">
-           <button type="button" class="btn btn-default" data-clipboard-target="#sn">
+           <button type="button" class="btn btn-primary" data-clipboard-target="#sn">
              Copy
              <!--img src="copy.svg" alt="Copy to clipboard" /-->
            </button> 
         </span>
       </div>
-      <div class="input-group">
+      <div class="input-group mb-3">
         <input name="input" class="form-control" id="mac" placeholder="MAC Address" readonly="readonly">
         <span class="input-group-btn">
-          <button type="button" class="btn btn-default" data-clipboard-target="#mac">
+          <button type="button" class="btn btn-primary" data-clipboard-target="#mac">
             Copy
             <!--img src="copy.svg" alt="Copy to clipboard" /-->
           </button>
